@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="confirmation">
+        <h1>SUBMITTED SUCCESSFULLY</h1>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Phone:</strong> {{ phone }}</p>
+        <p><strong>Message:</strong> {{ message }}</p>
+        <p><strong>Subject:</strong> {{ subject }}</p>
+        <p><strong>Preferred Contact Method:</strong> {{ preferred | join(', ') }}</p>
+        <p><strong>Agreement:</strong> {{ agreement }}</p>
+    </div>
+</body>
+</html>
